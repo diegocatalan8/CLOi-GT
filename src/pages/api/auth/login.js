@@ -25,7 +25,7 @@ export default function loginHandler(req, res){
                 secure: process.env.NODE_ENV === 'production',
                 sameSite: 'strict',
                 maxAge: 1000 * 60 * 60 * 24 * 30,
-                path:'/',
+                path:'/SignIn',
     
             })
             //creamos un header y lo enviamos con la cookie

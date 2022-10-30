@@ -19,7 +19,7 @@ export default function logoutHandler(req, res) {
             secure: process.env.NODE_ENV === 'production',
             sameSite: 'strict',
             maxAge: 0,
-            path:'/',
+            path:'/SignIn',
 
         })
 
