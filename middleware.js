@@ -3,6 +3,10 @@ import { NextResponse } from 'next/server'
 import { jwtVerify } from 'jose'
 
 export  async function middleware(request) {
+  console.log("middleware");
+  return NextResponse.next();
+
+  /*
   //Obtenemos la coockie
   const jwt = request.cookies.get("myTokenName");
   //Verificamos si es igual a undefined
@@ -20,6 +24,7 @@ export  async function middleware(request) {
     console.log(e);
     return NextResponse.redirect(new URL("/", request.url));
   }
+  */
 }
 
 export const config = {
