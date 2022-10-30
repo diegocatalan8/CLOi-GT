@@ -1,12 +1,5 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import LoadingHome from './LoadingHome';
 
-
-
-
-
+import SignIn from './SignIn';
 
 export default function Index() {
  
@@ -14,7 +7,7 @@ export default function Index() {
   
   return (
     <div>
-       <LoadingHome/>
+      <SignIn/>
           
     </div>
   )

@@ -94,10 +94,6 @@ const userLoad = async ()=>{
                     console.log(e);
                 }
                 
-
-
-
-                
                 router.push("/LoadingHome");
 
 
