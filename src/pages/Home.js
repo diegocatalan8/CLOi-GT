@@ -222,7 +222,7 @@ else if(localidad.valido == null){
 //FUNCION ESPECIAL QUE RECIBE UN CONTEXTO QUE RETORNA ALGO
 export const getServerSideProps = async () =>{
 
-    const res = await fetch('http://localhost:3000/api/direccion');
+    const res = await fetch('/api/direccion');
     const direccion = await res.json();
   
     console.log(direccion);
