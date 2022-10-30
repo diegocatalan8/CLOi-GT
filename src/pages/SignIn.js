@@ -98,8 +98,6 @@ const userLoad = async ()=>{
                 setTimeout(()=>{
                     router.push("/");
                 }, 1000)
-                
-                
 
 
             }

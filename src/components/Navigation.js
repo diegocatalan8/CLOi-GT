@@ -27,8 +27,6 @@ import { useRouter } from 'next/router';
    const deleteCookie = async()=>{
     const response = await axios.post('/api/auth/logout');
     console.log(response);
-    
-
             
           }
 
