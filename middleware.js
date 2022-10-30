@@ -6,7 +6,7 @@ export  async function middleware(request) {
   //Obtenemos la coockie
   const jwt = request.cookies.get("myTokenName");
   //Verificamos si es igual a undefined
-  if(jwt === undefined){
+  if(jwt == undefined){
     console.log("Entro");
     return NextResponse.redirect(new URL("/", request.url));
   }
