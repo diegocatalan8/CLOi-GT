@@ -20,7 +20,7 @@ console.log(router.query.id);
 //Funcion que va a cargar los restaurantes
 const loadRestaurants = async (id) =>{
     try{
-    const res = await fetch('http://cloi-gt.vercel.app/api/restaurantes/'+id);
+    const res = await fetch('https://cloi-gt.vercel.app/api/restaurantes/'+id);
     const restaurant = await res.json();
     setRestaurante(restaurant);
     setMunicipio(restaurant[0].municipio);

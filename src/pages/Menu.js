@@ -27,7 +27,7 @@ export default function Menu() {
 //Funcion que va a cargar las categorias
 const loadCategorias = async (nombre) =>{
     try{
-    const res = await fetch('http://cloi-gt.vercel.app/api/categoria/'+nombre);
+    const res = await fetch('https://cloi-gt.vercel.app/api/categoria/'+nombre);
     const categoria = await res.json();
         
     setCategorias(categoria);

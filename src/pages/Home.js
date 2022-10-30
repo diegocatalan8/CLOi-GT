@@ -222,7 +222,7 @@ else if(localidad.valido == null){
 //FUNCION ESPECIAL QUE RECIBE UN CONTEXTO QUE RETORNA ALGO
 export const getServerSideProps = async () =>{
 
-    const res = await fetch('http://cloi-gt.vercel.app/api/direccion');
+    const res = await fetch('https://cloi-gt.vercel.app/api/direccion');
     const direccion = await res.json();
   
     console.log(direccion);

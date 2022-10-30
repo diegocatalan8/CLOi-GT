@@ -47,7 +47,7 @@ export default function SignIn() {
 
 //peticion para pedir el usuario
 const userLoad = async ()=>{
-    const response = await fetch("http://lcloi-gt.vercel.app/api/user");
+    const response = await fetch("https://lcloi-gt.vercel.app/api/user");
     const usuario = await response.json();
 
     setUserValidation(usuario);
@@ -61,7 +61,7 @@ const userLoad = async ()=>{
    
         console.log(user);
   
-    await fetch('http://cloi-gt.vercel.app/api/auth/login', 
+    await fetch('https://cloi-gt.vercel.app/api/auth/login', 
           {
           method:'POST',
           headers:{

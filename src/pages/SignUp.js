@@ -265,7 +265,7 @@ const createUser = async(user)=>{
 
       console.log(user);
 
-  await fetch('http://cloi-gt.vercel.app/api/user', 
+  await fetch('https://cloi-gt.vercel.app/api/user', 
         {
         method:'POST',
         headers:{
@@ -279,7 +279,7 @@ const createUser = async(user)=>{
 
     //peticion para pedir el usuario
     const userLoad = async ()=>{
-        const response = await fetch("http://cloi-gt.vercel.app/api/user");
+        const response = await fetch("https://cloi-gt.vercel.app/api/user");
         const usuario = await response.json();
 
         setUserValidation(usuario);

@@ -12,7 +12,7 @@ export default function SeleccionMenu({seleccion}) {
     //Funcion que va a cargar las categorias
 const loadMenu = async (id) =>{
     try{
-    const res = await fetch('http://cloi-gt.vercel.app/api/producto/'+id);
+    const res = await fetch('https://cloi-gt.vercel.app/api/producto/'+id);
     const menu = await res.json();
     setMenus(menu);
         
