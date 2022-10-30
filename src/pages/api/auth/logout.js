@@ -15,7 +15,7 @@ export default function logoutHandler(req, res) {
         //con el metodo serialized lo serializamos
         //generamos una cookie en el navegador
         const serialized = serialize('myTokenName', null, {
-            httpOnly:true,
+            httpsOnly:true,
             secure: process.env.NODE_ENV === 'production',
             sameSite: 'strict',
             maxAge: 0,
