@@ -39,7 +39,7 @@ class ModalProto extends React.Component {
           <ModalBody>
               {
               horarios != "" ?  horarios.map((item)=>(
-                    <p>{item.dia}:      {item.horarios}</p>
+                    <p key={item.id} >{item.dia}:      {item.horarios}</p>
                 ))
 
                 :
