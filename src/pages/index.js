@@ -1,5 +1,6 @@
 
-import SignIn from './SignIn';
+
+import LoadingHome from "./LoadingHome"
 
 export default function Index() {
  
@@ -7,7 +8,7 @@ export default function Index() {
   
   return (
     <div>
-      <SignIn/>
+     <LoadingHome/>
           
     </div>
   )

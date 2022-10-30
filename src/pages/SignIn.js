@@ -94,7 +94,7 @@ const userLoad = async ()=>{
                     console.log(e);
                 }
                 
-                router.push("/LoadingHome");
+                
 
 
             }
@@ -105,6 +105,8 @@ const userLoad = async ()=>{
                 console.log("no entro")
                 
             }
+
+            router.push("/");
 
             
         });

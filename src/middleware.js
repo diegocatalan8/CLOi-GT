@@ -9,7 +9,7 @@ export  async function middleware(request) {
   //Verificamos si es igual a undefined
   if(jwt == undefined){
     console.log("Entro");
-    return NextResponse.redirect(new URL("/", request.url));
+    return NextResponse.redirect(new URL("/SignIn", request.url));
   }
 
   try{
@@ -19,11 +19,11 @@ export  async function middleware(request) {
 
   }catch(e){
     console.log(e);
-    return NextResponse.redirect(new URL("/", request.url));
+    return NextResponse.redirect(new URL("/SignIn", request.url));
   }
   
 }
 
 export const config = {
-    matcher: ['/Home', '/Loading', '/LoadingHome', '/Restaurantes' ]
+    matcher: ['/Home', '/Loading', '/LoadingHome', '/Restaurantes', '/' ]
 }
