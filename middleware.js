@@ -7,7 +7,7 @@ export default async function middleware(request) {
   const jwt = request.cookies.get("myTokenName");
   //Verificamos si es igual a undefined
   if(jwt === undefined){
-    return NextResponse.redirect(new URL("/SignIn", "secret"));
+    return NextResponse.redirect(new URL("/", request.url));
   }
 
   try{
@@ -17,7 +17,7 @@ export default async function middleware(request) {
 
   }catch(e){
     console.log(e);
-    return NextResponse.redirect(new URL("/SignIn", request.url));
+    return NextResponse.redirect(new URL("/", request.url));
   }
 }
 
