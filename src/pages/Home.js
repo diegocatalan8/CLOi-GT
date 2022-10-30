@@ -137,8 +137,8 @@ else if(localidad.valido == null){
                 justifyItems:"center",
                  
             }}>
-                <figure  style={{width:"100%", heigth:"100%", marginTop:"60px"}}>
-                    <Image style={{width:"300px", heigth:"300px"}} src={mapa} alt="mapa" />
+                <figure  style={{width:"300px", heigth:"300px", marginTop:"60px"}}>
+                    <Image style={{width:"100%", heigth:"100%"}} src={mapa} alt="mapa" />
                 </figure>
                 <div style={{textAlign:"center", color:"#444251", marginTop:"60px"}}>
                     <h4 style={{marginBottom:"25px"}} >¿Quieres aparecer en nuestra lista de restaurantes?</h4>
