@@ -47,7 +47,7 @@ export default function SignIn() {
 
 //peticion para pedir el usuario
 const userLoad = async ()=>{
-    const response = await fetch("http://localhost:3000/api/user");
+    const response = await fetch("http://lcloi-gt.vercel.app/api/user");
     const usuario = await response.json();
 
     setUserValidation(usuario);
