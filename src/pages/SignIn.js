@@ -90,9 +90,14 @@ const userLoad = async ()=>{
                     createCookie(enviar);
                     
                     
+                    
                 }catch(e){
                     console.log(e);
                 }
+
+                setTimeout(()=>{
+                    router.push("/");
+                }, 1000)
                 
                 
 
@@ -106,7 +111,7 @@ const userLoad = async ()=>{
                 
             }
 
-            router.push("/");
+           
 
             
         });
