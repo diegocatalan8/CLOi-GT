@@ -82,7 +82,7 @@ const loadRestaurants = async (id) =>{
            municipio != "" ?     restaurante.map(res=>(
                     
                     <Card
-                        
+                        key={res.id}
                         body
                         style={{
                             

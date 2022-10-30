@@ -54,7 +54,7 @@ const loadMenu = async (id) =>{
                 }}>
                 {
                     menus.map(item=>(
-                    <div className='col-10 col-lg-2 sombreado'  style={{
+                    <div key={item.id} className='col-10 col-lg-2 sombreado'  style={{
                         boxShadow:"0px 0px 5px black",
                         display:"flex",
                         flexDirection:"column",

@@ -7,7 +7,7 @@ import mapa from '../../public/mapa.svg';
 import logo from '../../public/logo.jpg';
 import { useRouter } from 'next/router';
 
-export default function (props) {
+export default function Home (props) {
     //destructuracion de props
     const {direccion} = props;
     

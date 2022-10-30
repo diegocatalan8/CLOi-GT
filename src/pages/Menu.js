@@ -96,6 +96,7 @@ const loadCategorias = async (nombre) =>{
                 {
                     categorias.map(item=>(
                         <button  
+                        key={item.id}
                         type='button' 
                         className='selectMenu'
                         onClick={()=>setSeleccion(item.id)}
