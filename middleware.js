@@ -2,11 +2,12 @@ import React from 'react'
 import { NextResponse } from 'next/server'
 import { jwtVerify } from 'jose'
 
-export default async function middleware(request) {
+export  async function middleware(request) {
   //Obtenemos la coockie
   const jwt = request.cookies.get("myTokenName");
   //Verificamos si es igual a undefined
   if(jwt === undefined){
+    console.log("Entro");
     return NextResponse.redirect(new URL("/", request.url));
   }
 
