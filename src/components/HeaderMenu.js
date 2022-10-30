@@ -14,7 +14,7 @@ export default function HeaderMenu({restauranteNombre, telefono, descripcion, mu
     //Funcion que va a cargar los horarios
 const loadHorarios = async (restaurante) =>{
     try{
-    const res = await fetch('http://localhost:3000/api/horarios/'+restaurante);
+    const res = await fetch('http://cloi-gt.vercel.app/api/horarios/'+restaurante);
     const horario = await res.json();
         
     setHorarios(horario);
