@@ -21,7 +21,7 @@ export default function loginHandler(req, res){
         //con el metodo serialized lo serializamos
         //generamos una cookie en el navegador
             const serialized = serialize('myTokenName', token, {
-                
+                //httpOnly:true,
                 secure: process.env.NODE_ENV === 'production',
                 sameSite: 'strict',
                 maxAge: 1000 * 60 * 60 * 24 * 30,
