@@ -91,7 +91,7 @@ else if(localidad.valido == null){
             color:"#444251",
             }}>
 
-            <FormGroup className=' col-9 '>
+            <FormGroup className='mt-4 col-9 '>
                 
                 <Input style={{
                     height:"48px", 
@@ -137,7 +137,7 @@ else if(localidad.valido == null){
                 justifyItems:"center",
                  
             }}>
-                <figure  style={{width:"100px", heigth:"100px", marginTop:"60px"}}>
+                <figure  style={{width:"300px", heigth:"300px"}}>
                     <Image style={{width:"100%", heigth:"100%"}} src={mapa} alt="mapa" />
                 </figure>
                 <div style={{textAlign:"center", color:"#444251", marginTop:"60px"}}>
