@@ -193,7 +193,7 @@ const userLoad = async ()=>{
                     <ButtonOrange  className="button-orange">LOGIN</ButtonOrange>
                        ):
                        (
-                    <ButtonOrange disabled className="button-orange">LOGIN</ButtonOrange>
+                    <ButtonOrange style={{backgroundColor:"gray", color:"black"}}  className="button-orange">LOGIN</ButtonOrange>
                        )
                     }
                     <p onClick={()=>router.push('./SignUp')} className='forgotPassword' style={{
