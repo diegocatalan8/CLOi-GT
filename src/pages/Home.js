@@ -103,7 +103,7 @@ else if(localidad.valido == null){
                  className={inputClaseLocalidad}
                  onBlur={validacionNombreLocalidad}
                  onChange={onChangeLocalidad}  >
-                 <option selected>Selecciona una opción</option>
+                 <option selected>Selecciona un lugar</option>
                 {direccion.map((objeto)=>(
                     
                 <option  key={objeto.id} value={objeto.id}>{objeto.municipio}, {objeto.departamento}</option>
@@ -144,7 +144,7 @@ else if(localidad.valido == null){
                     <h4 style={{marginBottom:"25px"}} >¿Quieres aparecer en nuestra lista de restaurantes?</h4>
                     <p style={{marginBottom:"0"}}>Llena el siguiente formulario</p>
                     <p >para registrarte.</p>
-                    <ButtonOrange style={{color:"white", backgroundColor:"#CBCBCB", width:"100%"}} className='mt-3 mb-5'>Proximamente</ButtonOrange>
+                    <ButtonOrange style={{color:"white", backgroundColor:"#CBCBCB", width:"100%"}} className='mt-3 mb-5'>Próximamente</ButtonOrange>
                 </div>
             </div>
 
@@ -166,7 +166,7 @@ else if(localidad.valido == null){
 
                 <div style={{textAlign:"center", color:"#444251", marginTop:"40px", }}>
                     <h4 style={{marginBottom:"25px", textAlign:"start"}} >¿Qué es CLOi-GT?</h4>
-                    <p style={{marginBottom:"0", textAlign:"justify"}}>CLOi-GT es una aplicación web que centraliza restaurantes de Guatemala a nivel de oriente que podran ser encontrados por medio de su motor de busqueda, brindando al usuario todo tipo de informacion como la localizacion, menu, delivery del restaurante y horas de atencion al cliente.</p>
+                    <p style={{marginBottom:"0", textAlign:"justify"}}>CLOi-GT es una aplicación web que centraliza restaurantes de Guatemala a nivel de oriente que podrán ser encontrados por medio de su motor de búsqueda, brindando al usuario todo tipo de información como la localización, menú, delivery del restaurante y horas de atención al cliente.</p>
                     
                 </div>
                 <figure  style={{width:"100vh", heigth:"400px", marginTop:"80px"}}>
