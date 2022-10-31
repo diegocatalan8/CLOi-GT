@@ -151,7 +151,7 @@ const userLoad = async ()=>{
 
                     }}>
                     {
-                    contador == 3 ? (    
+                    contador < 3 ? (    
                     <div className={error}>
                     El nombre de usuario o la contraseña son incorrectos.
                     </div>
