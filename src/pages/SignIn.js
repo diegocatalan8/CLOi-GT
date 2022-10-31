@@ -150,10 +150,19 @@ const userLoad = async ()=>{
                     
 
                     }}>
+                    {
+                    contador == 3 ? (    
                     <div className={error}>
-                   
                     El nombre de usuario o la contraseña son incorrectos.
                     </div>
+                    )
+                    :
+                    (
+                    <div className={error}>
+                    Intente más tarde.
+                    </div>
+                    )
+                }
 
                     <FormGroup className='col-9 '>
                             <Label for="usuario">Usuario</Label>
@@ -193,7 +202,7 @@ const userLoad = async ()=>{
                     <ButtonOrange  className="button-orange">LOGIN</ButtonOrange>
                        ):
                        (
-                    <ButtonOrange style={{backgroundColor:"gray", color:"black"}}  className="button-orange">LOGIN</ButtonOrange>
+                    <ButtonOrange disabled style={{backgroundColor:"gray", color:"black"}}  className="button-orange">LOGIN</ButtonOrange>
                        )
                     }
                     <p onClick={()=>router.push('./SignUp')} className='forgotPassword' style={{
