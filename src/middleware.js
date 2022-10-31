@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 import { NextResponse } from 'next/server'
 import { jwtVerify } from 'jose'
 
@@ -27,3 +27,4 @@ export  async function middleware(request) {
 export const config = {
     matcher: ['/Home', '/Loading', '/LoadingHome', '/Restaurantes', '/' ]
 }
+*/

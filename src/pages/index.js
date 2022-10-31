@@ -1,7 +1,5 @@
 
 
-import LoadingHome from "./LoadingHome"
-
 export default function Index() {
  
 
