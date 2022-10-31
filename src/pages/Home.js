@@ -137,7 +137,7 @@ else if(localidad.valido == null){
                 justifyItems:"center",
                  
             }}>
-                <figure  style={{width:"300px", heigth:"300px"}}>
+                <figure  style={{width:"300px", heigth:"300px", marginTop:"60px"}}>
                     <Image style={{width:"100%", heigth:"100%"}} src={mapa} alt="mapa" />
                 </figure>
                 <div style={{textAlign:"center", color:"#444251", marginTop:"60px"}}>
