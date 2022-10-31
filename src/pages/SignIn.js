@@ -17,6 +17,8 @@ export default function SignIn() {
     //Estados para validacion
     const [userValidation, setUserValidation] = useState("");
     const [error, setError] = useState("none");
+    //Estado para el conteo
+    const [contador, setContador] = useState(0);
 
     //Funciones onChange para los inputs
     const onChangeUsuario = (e) => {
@@ -105,7 +107,8 @@ const userLoad = async ()=>{
             if(usuario.campo != item.usuario || password.campo != item.passwd){
                  
                setError("mensajeRojo");
-                console.log("no entro")
+                console.log("no entro");
+                setContador(contador+1);
                 
             }
 
@@ -124,6 +127,9 @@ const userLoad = async ()=>{
         console.log(userValidation);
 
     }, [error])
+
+
+    
   
 
   return (
@@ -181,9 +187,15 @@ const userLoad = async ()=>{
                         color:"#444251",
                        
                     }}>Forgot Password?</p>
-                    
-                    <ButtonOrange  className='button-orange'>LOGIN</ButtonOrange>
-                    
+
+                    {
+                       contador < 3 ? (
+                    <ButtonOrange  className="button-orange">LOGIN</ButtonOrange>
+                       ):
+                       (
+                    <ButtonOrange disabled className="button-orange">LOGIN</ButtonOrange>
+                       )
+                    }
                     <p onClick={()=>router.push('./SignUp')} className='forgotPassword' style={{
                         width:"70%",
                         textAlign:"center",
