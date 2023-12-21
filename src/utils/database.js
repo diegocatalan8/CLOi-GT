@@ -6,11 +6,11 @@ let conn;
 if(!conn){
    
     conn = new Pool({
-        user:'postgres',
-        password:'6ncjcraA11FR6l7GkBTj',
-        host:'containers-us-west-25.railway.app',
-        port: 6610,
-        database: 'railway'
+        user:'stxqkvlw',
+        password:'RuKddd786yAt8j1Y2giaMIZGqJS7KNsY',
+        host:'bubble.db.elephantsql.com',
+        port: 5432,
+        database: 'stxqkvlw'
     })
 }
 
