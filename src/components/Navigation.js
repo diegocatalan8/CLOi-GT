@@ -51,9 +51,6 @@ import { useRouter } from 'next/router';
               </NavLink>
             </NavItem>
             <NavItem>
-            <NavLink onClick={deleteCookie} style={{color:"#444251"}} href="/SignIn">
-                  Logout
-            </NavLink>
           </NavItem>
           
           </Nav>
